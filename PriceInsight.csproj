@@ -7,11 +7,12 @@
 		<Platforms>x64</Platforms>
 		<Configurations>Debug;Release</Configurations>
 		<LangVersion>12</LangVersion>
+		<PackageId>PriceInsight</PackageId>
+		<RootNamespace>PriceInsight</RootNamespace>
 	</PropertyGroup>
 
 	<!-- Assembly Configuration -->
 	<PropertyGroup>
-		<AssemblyName>PriceInsight</AssemblyName>
 		<Version>2.11.1.1</Version>
 	</PropertyGroup>
 
@@ -37,7 +38,7 @@
 
 	<!-- Dalamud Configuration -->
 	<PropertyGroup>
-		<DalamudLibPath>$(appdata)\XIVLauncher\addon\Hooks\dev\</DalamudLibPath>
+		<DalamudLibPath>$(appdata)\XIVLauncherCN\addon\Hooks\dev\</DalamudLibPath>
 	</PropertyGroup>
 
 	<!-- Assembly Reference Locations -->
@@ -87,4 +88,9 @@
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
 	</ItemGroup>
-</Project>
+
+	<ItemGroup>
+	  <PackageReference Update="DalamudPackager" Version="11.0.0" />
+	  <PackageReference Update="DotNet.ReproducibleBuilds" Version="1.2.25" />
+	</ItemGroup>
+</Project>		
