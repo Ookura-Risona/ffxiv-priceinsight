@@ -43,7 +43,7 @@ internal class ConfigUI(PriceInsightPlugin plugin) : IDisposable {
                 plugin.ClearCache();
             }
             if (ImGui.IsItemHovered())
-                ImGui.SetTooltip("你当前所在的服务器将被视为你的“原始服务器”。\n如果你正在跨大区并想查看那里的的价格，这会很有用。\n（所以丝瓜的跨大区呢？）");
+                ImGui.SetTooltip("你当前所在的服务器将被视为你的“原始服务器”。\n如果你正在跨大区并想查看那里的的价格，这会很有用。");
 
             ImGui.Separator();
             ImGui.PushID(0);
@@ -151,6 +151,6 @@ internal class ConfigUI(PriceInsightPlugin plugin) : IDisposable {
 
     private static void TooltipRegion() {
         if (ImGui.IsItemHovered())
-            ImGui.SetTooltip("包含通过跨大区可以前往的所有大区\n（虽然国服跨大区还不存在）");
+            ImGui.SetTooltip("包含通过跨大区可以前往的所有大区");
     }
 }
